@@ -1,0 +1,6 @@
+---
+puppet_enterprise::master::puppetserver::jruby_max_active_instances: 1
+puppet_enterprise::profile::master::java_args:
+  Xms: 256m
+  Xmx: 128m
+puppet_enterprise::master::puppetserver::reserved_code_cache: 64m
