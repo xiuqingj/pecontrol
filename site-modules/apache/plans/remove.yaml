@@ -1,0 +1,18 @@
+steps:
+  - task: apache::ctl
+    target: rhel8agent.platform9.puppet.net
+    description: "shutdown Apache service"
+    parameters:
+      command: graceful-stop
+
+  - command: "cp /etc/httpd/logs/access.log /tmp/apache_access"
+    target: debian-agent.platform9.puppet.net
+    description: "Copy the apache access logs"
+
+  - task: package
+    target: debian-agent.platform9.puppet.net
+    description: "Remove Apache"
+    parameters:
+      action: uninstall
+      name: apache2  
+

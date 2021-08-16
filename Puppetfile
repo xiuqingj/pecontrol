@@ -2,16 +2,24 @@ forge "http://forge.puppetlabs.com"
 
 # Modules from the Puppet Forge
 # Further examples: https://github.com/puppetlabs/r10k/blob/master/doc/puppetfile.mkd#forge-1
-mod "puppetlabs/inifile",     '1.6.0'
-mod "puppetlabs/stdlib",      '4.25.1'
+mod "puppetlabs/inifile",     '2.0.0'
+mod "puppetlabs/stdlib",      '5.1.0'
 mod "puppetlabs/ntp",         '4.1.0'
 mod "puppetlabs/concat",      '2.2.1'
 mod "puppet/hiera",           '2.4.0'
 mod "npwalker/pe_code_manager_webhook",  '2.0.1'
 mod "npwalker/pe_metric_curl_cron_jobs", '4.0.0'
-#mod 'puppet-grafana', '8.0.0'
-mod 'puppet-archive', '4.6.0'
+mod 'puppet-grafana', '6.0.0'
+mod 'puppet-archive', '1.1.0'
 mod 'pltraining-rbac', '0.0.5'
+mod 'puppetlabs/puppet_metrics_dashboard', '2.5.0'
+mod 'puppetlabs/puppetserver_gem', '1.1.1'
+mod 'puppet/telegraf', '3.1.0'
+mod 'puppetlabs-apt', '7.7.0'
+mod 'puppetlabs-translate', '1.0.0'
+
+
+
 # Modules from Github using various references
 # Further examples: https://github.com/puppetlabs/r10k/blob/master/doc/puppetfile.mkd#examples
 # update the tag to the most current release when implementing

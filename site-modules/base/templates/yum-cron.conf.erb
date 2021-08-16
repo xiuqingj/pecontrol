@@ -1,0 +1,20 @@
+[commands]
+update_cmd = minimal-security
+update_messages = yes
+download_updates = yes
+apply_updates = yes
+random_sleep = 360
+[emitters]
+system_name = <%= @hostname %>
+emit_via = email
+output_width = 80
+[email]
+email_from = sandra.jiang@puppet.com
+email_to = sandra.jiang@puppet.com
+email_host = alt1.aspmx.l.google.com
+[groups]
+group_list = None
+group_package_types = mandatory, default
+[base]
+debuglevel = -2
+mdpolicy = group:main
