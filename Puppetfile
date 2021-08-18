@@ -17,6 +17,7 @@ mod 'puppetlabs/puppetserver_gem', '1.1.1'
 mod 'puppet/telegraf', '3.1.0'
 mod 'puppetlabs-apt', '7.7.0'
 mod 'puppetlabs-translate', '1.0.0'
+mod 'puppetlabs/haproxy', '6.1.0'
 
 
 
