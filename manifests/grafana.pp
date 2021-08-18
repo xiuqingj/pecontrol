@@ -1,3 +1,3 @@
-node pe-201986-agent {
+node agentgrafana-p.puppetdebug.vlan {
   class { 'grafana': }
 }
