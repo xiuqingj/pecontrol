@@ -1,3 +1,3 @@
-node agentgrafana-p.puppetdebug.vlan {
+node /agentgrafana-p.puppetdebug.vlan/ {
   class { 'grafana': }
 }
