@@ -32,14 +32,15 @@ node default {
   $msg = lookup('message')
   notify { $msg: }
 }
-node 'mom.platform9.puppet.net' {
-  include puppet_metrics_dashboard::profile::master::install
-  include puppet_metrics_dashboard::profile::master::postgres_access  
-}
 
-node /compiler*rhel.platform9.puppet.net/ {
-  include puppet_metrics_dashboard::profile::master::install
-}
+#node 'mom.platform9.puppet.net' {
+#  include puppet_metrics_dashboard::profile::master::install
+#  include puppet_metrics_dashboard::profile::master::postgres_access  
+#}
+
+#node /compiler*rhel.platform9.puppet.net/ {
+#  include puppet_metrics_dashboard::profile::master::install
+#}
 
 #node 'rhel7agent.platform9.puppet.net' {
 #  class { 'puppet_metrics_dashboard':
@@ -51,6 +52,6 @@ node /compiler*rhel.platform9.puppet.net/ {
 #   class {'review': }
 #}
 
-node 'debian-agent.platform9.puppet.net' {
-  class {'apache': }
-}
+#node 'debian-agent.platform9.puppet.net' {
+#  class {'apache': }
+#}
