@@ -61,5 +61,6 @@ node 'pemom-p.puppetdebug.vlan' {
 puppet_metrics_dashboard::profile::puppetdb{ $facts['networking']['fqdn']:
   timeout          => '5s',
   puppetdb_metrics => puppet_metrics_dashboard::puppetdb_metrics(), # this is the default value
+  enable_client_cert => false
 }
 }
