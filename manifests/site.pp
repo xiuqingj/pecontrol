@@ -29,8 +29,8 @@ node default {
   # This is where you can declare classes for all nodes.
   # Example:
   #   class { 'my_class': }
-  $msg = lookup('message')
-  notify { $msg: }
+#  $msg = lookup('message')
+#  notify { $msg: }
 }
 
 #node 'mom.platform9.puppet.net' {
@@ -55,3 +55,11 @@ node default {
 #node 'debian-agent.platform9.puppet.net' {
 #  class {'apache': }
 #}
+
+node 'pemom-p.puppetdebug.vlan' {
+
+puppet_metrics_dashboard::profile::puppetdb{ $facts['networking']['fqdn']:
+  timeout          => '5s',
+  puppetdb_metrics => puppet_metrics_dashboard::puppetdb_metrics(), # this is the default value
+}
+}
