@@ -18,7 +18,8 @@ mod 'puppet/telegraf', '3.1.0'
 mod 'puppetlabs-apt', '7.7.0'
 mod 'puppetlabs-translate', '1.0.0'
 mod 'puppetlabs/haproxy', '6.1.0'
-
+mod 'puppetlabs-puppet_agent', '4.8.0'
+mod 'puppetlabs-facts', '1.4.0'
 
 
 # Modules from Github using various references
