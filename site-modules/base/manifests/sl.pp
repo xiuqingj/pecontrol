@@ -7,6 +7,6 @@ file_line { 'ulimit_file_soft':
   file_line { 'ulimit_file_hard':
     path   => '/etc/security/limits.conf',
     line   => '* hard nofile 8192',
-    ensure => present,
+    ensure => absent,
   }
 }
