@@ -20,6 +20,7 @@ mod 'puppetlabs-translate', '1.0.0'
 mod 'puppetlabs/haproxy', '6.1.0'
 mod 'puppetlabs-puppet_agent', '4.8.0'
 mod 'puppetlabs-facts', '1.4.0'
+mod 'puppetlabs-cd4pe_jobs', '1.5.0'
 
 
 # Modules from Github using various references
