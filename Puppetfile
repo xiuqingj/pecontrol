@@ -2,7 +2,7 @@ forge "http://forge.puppetlabs.com"
 
 # Modules from the Puppet Forge
 # Further examples: https://github.com/puppetlabs/r10k/blob/master/doc/puppetfile.mkd#forge-1
-mod "puppetlabs/inifile",     '2.0.0'
+#mod "puppetlabs/inifile",     '2.0.0'
 mod "puppetlabs/stdlib",      '5.1.0'
 mod "puppetlabs/ntp",         '4.1.0'
 mod "puppetlabs/concat",      '2.2.1'
@@ -13,7 +13,7 @@ mod 'puppet-grafana', '6.0.0'
 mod 'puppet-archive', '1.1.0'
 mod 'pltraining-rbac', '0.0.5'
 mod 'puppetlabs/puppet_metrics_dashboard', '2.5.0'
-mod 'puppetlabs/puppetserver_gem', '1.1.1'
+#mod 'puppetlabs/puppetserver_gem', '1.1.1'
 mod 'puppet/telegraf', '3.1.0'
 mod 'puppetlabs-apt', '7.7.0'
 mod 'puppetlabs-translate', '1.0.0'
@@ -22,7 +22,7 @@ mod 'puppetlabs-puppet_agent', '4.8.0'
 mod 'puppetlabs-facts', '1.4.0'
 mod 'puppetlabs-cd4pe_jobs', '1.5.0'
 mod 'puppet-hiera', '4.0.0'
-#mod 'puppetlabs-puppetserver_gem', '1.1.1'
+
 
 
 # Modules from Github using various references
