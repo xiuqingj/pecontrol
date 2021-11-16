@@ -32,9 +32,9 @@ mod 'puppet-hiera', '4.0.0'
 #  :git => 'https://github.com/npwalker/pe_code_manager_webhook',
 #  :ref => '9e167154b146901d7cfd3e67dc70e984796da03f'
 
-mod 'gms',
-  :git    => 'https://github.com/abrader/abrader-gms',
-  :ref    => 'a5105e95cf0f8b84a143d7a69a83e3ff3d4e02fb'
+#mod 'gms',
+#  :git    => 'https://github.com/abrader/abrader-gms',
+#  :ref    => 'a5105e95cf0f8b84a143d7a69a83e3ff3d4e02fb'
 
 #mod 'pltraining-rbac',
 #  :git    => 'https://github.com/puppetlabs/pltraining-rbac',
