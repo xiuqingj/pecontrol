@@ -22,7 +22,7 @@ mod 'puppetlabs-puppet_agent', '4.8.0'
 mod 'puppetlabs-facts', '1.4.0'
 mod 'puppetlabs-cd4pe_jobs', '1.5.0'
 mod 'puppet-hiera', '4.0.0'
-mod 'puppetlabs-puppetserver_gem', '1.1.1'
+#mod 'puppetlabs-puppetserver_gem', '1.1.1'
 
 
 # Modules from Github using various references
