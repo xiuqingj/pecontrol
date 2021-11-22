@@ -8,13 +8,6 @@ defaults:
     datadir: data
     data_hash: yaml_data
 hierarchy:
-  - name: Eyaml Data
-    lookup_key: eyaml_lookup_key
-    paths:
-    - "secrets/%{facts.fqdn}.eyaml" 
-    options:
-      pkcs7_private_key: /etc/puppetlabs/puppet/eyaml/private_key.pkcs7.pem
-      pkcs7_public_key: /etc/puppetlabs/puppet/eyaml/public_key.pkcs7.pem
   - name: "Per-node data (yaml version)"
     path: "nodes/%{::trusted.certname}.yaml"
   - name: "Other YAML hierarchy levels"
