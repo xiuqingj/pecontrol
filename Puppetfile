@@ -41,6 +41,6 @@ mod 'gms',
 #  :ref    => '9a823ff42810988f80a2b65738054a816620d972'
 
 mod 'scb_mongo_ura',
-  :git             => 'https://github.com/sooyean-hoo/scb_mongo_ura',
+  :git             => 'https://github.com/sandrajiang/scb_mongo_ura',
   :branch         => :control_branch,
   :default_branch => 'production'
