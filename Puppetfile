@@ -11,7 +11,7 @@ mod "npwalker/pe_metric_curl_cron_jobs", '4.0.0'
 mod 'puppet-grafana', '6.0.0'
 mod 'puppet-archive', '1.1.0'
 mod 'pltraining-rbac', '0.0.5'
-mod 'puppetlabs/puppet_metrics_dashboard', '2.5.0'
+mod 'puppetlabs/puppet_metrics_dashboard', '2.6.1'
 mod 'puppetlabs/puppetserver_gem', '1.1.1'
 mod 'puppet/telegraf', '3.1.0'
 mod 'puppetlabs-apt', '7.7.0'
@@ -40,7 +40,7 @@ mod 'gms',
 #  :git    => 'https://github.com/puppetlabs/pltraining-rbac',
 #  :ref    => '9a823ff42810988f80a2b65738054a816620d972'
 
-mod 'scb_mongo_ura',
-  :git             => 'https://github.com/sandrajiang/scb_mongo_ura',
-  :branch         => :control_branch,
-  :default_branch => 'production'
+#mod 'scb_mongo_ura',
+#  :git             => 'https://github.com/sandrajiang/scb_mongo_ura',
+#  :branch         => :control_branch,
+#  :default_branch => 'production'
