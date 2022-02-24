@@ -31,6 +31,7 @@ node 'agent-p.puppetdebug.vlan' {
   # class { 'my_class': }
    $msg = lookup('message')
    notify { $msg: }
+   class { 'base::sysctl': }
 }
 
 #node 'mom.platform9.puppet.net' {
