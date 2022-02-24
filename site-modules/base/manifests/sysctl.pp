@@ -5,7 +5,7 @@ class base::sysctl {
     match   => "^net.ipv4.tcp_challenge_ack_limit.*$",
     ensure  => present,
     notify  => Exec['/sbin/sysctl -p'],
-    noop    => false,
+    #noop    => false,
   }
 
   exec { '/sbin/sysctl -p':
