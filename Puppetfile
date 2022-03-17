@@ -22,7 +22,7 @@ mod 'puppetlabs-facts', '1.4.0'
 mod 'puppetlabs-cd4pe_jobs', '1.5.0'
 mod 'puppet-hiera', '4.0.0'
 mod 'puppetlabs-mysql', '12.0.1'
-
+mod 'puppetlabs-ca_extend', '3.0.0'
 
 
 # Modules from Github using various references
