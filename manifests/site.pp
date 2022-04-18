@@ -64,4 +64,4 @@ node 'agent-p.puppetdebug.vlan' {
  # puppetdb_metrics => puppet_metrics_dashboard::puppetdb_metrics(), # this is the default value
  # enable_client_cert => false
 #}
-}
+#}
