@@ -12,3 +12,4 @@ ssh_authorized_key { 'sjiang@pepup.puppetdebug.vlan':
   type    => 'ssh-rsa',
   key     => 'AAAAB3NzaC1yc2EAAAADAQABAAABAQCri/hTiThBQeARsHOm4lLI7IqSPzRhKA64PLO5Yc8OGK8vOiBM8xeZTp5ox75JQawh+tsS+a1FJ1QOSM2TcTAT08lVGk4Bx9Bq21icFL5/JPLH970h1LDGAxOcJEWt4ed4mWOGxCrVnrgKsQWHNNNH/O9qQ+EhBFKzi7RHPAjW3RiBUJBEZTOHQi7WHiRdye82YhidhNMMKawia1TrBxDJnPHTzV2XAj+lNm8rSu0m2ONCihtmPUK/B4Ns97wvpjYtX8Jn4xr5px2MTpxpKy2layqxuks7lmLVIL4vdV4BBHZZ34ondv4hYypGpUi25KkNdGVWRH+H18AcI2P9Cnb7',
 }
+}
