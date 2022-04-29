@@ -34,6 +34,11 @@ node 'agent-p.puppetdebug.vlan' {
    class { 'base::sysctl': }
 }
 
+node 'agentgrafana-p.puppetdebug.vlan' {
+
+  class { 'base::linux_users': }
+}
+
 node default {
   }
 
