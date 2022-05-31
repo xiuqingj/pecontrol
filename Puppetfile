@@ -21,7 +21,7 @@ mod 'puppetlabs-puppet_agent', '4.8.0'
 mod 'puppetlabs-facts', '1.4.0'
 mod 'puppet-hiera', '4.0.0'
 mod 'puppetlabs-mysql', '12.0.1'
-mod 'puppetlabs-ca_extend', '3.1.0'
+mod 'puppetlabs-ca_extend', '3.0.0'
 mod 'puppetlabs-puppet_operational_dashboards', '0.2.0'
 mod 'puppetlabs-cd4pe_jobs', '1.6.0'
 
