@@ -1,2 +1,7 @@
 ---
 message: "This node is using common data from primary server on 18th April"
+
+motd::content: | 
+  Welcome
+
+  This server is managed by Sandra
