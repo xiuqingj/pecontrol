@@ -25,6 +25,7 @@ mod 'puppetlabs-ca_extend', '3.0.0'
 mod 'puppetlabs-puppet_operational_dashboards', '0.2.0'
 mod 'puppetlabs-cd4pe_jobs', '1.6.0'
 mod 'puppetlabs-motd', '6.2.0'
+mod 'puppetlabs-cem_linux', 1.2.0'
 
 # Modules from Github using various references
 # Further examples: https://github.com/puppetlabs/r10k/blob/master/doc/puppetfile.mkd#examples
