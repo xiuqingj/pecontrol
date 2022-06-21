@@ -45,3 +45,5 @@ mod 'gms',
 # git: 'git@github.com:sandrajiang/puppetlabs-self_service.git',
 # branch: 'SUP-2908'
 
+mod 'cem_linux',
+  :git  => 'https://github.com/puppetlabs/puppetlabs-cem_linux'
