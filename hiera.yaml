@@ -8,8 +8,11 @@ defaults:
     datadir: data
     data_hash: yaml_data
 hierarchy:
-  #  - name: "Per-node data (yaml version)"
-  #  path: "nodes/%{::trusted.certname}.yaml"
+  - name: "Yaml backend"
+    paths:
+      - "nodes/%{trusted.certname}.yaml"
+  - name: "Compile Master Data"
+    path: "role/%{trusted.extensions.pp_role}.yaml"
   - name: "Other YAML hierarchy levels"
     paths:
       #    - "%{environment}.yaml"
