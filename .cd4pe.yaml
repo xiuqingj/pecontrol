@@ -38,5 +38,86 @@ pipelines:
     - name: "Deployment stage"
       steps: []
       auto_promote: false
+  sandpit:
+    triggers:
+    - "COMMIT"
+    stages:
+    - name: "Code Validation stage"
+      steps:
+      - type: "JOB"
+        name: "control-repo-manifest-validate"
+        concurrent_compilations: 0
+        all_deployments: false
+      - type: "JOB"
+        name: "control-repo-hiera-syntax-validate"
+        concurrent_compilations: 0
+        all_deployments: false
+      - type: "JOB"
+        name: "control-repo-template-syntax-validate"
+        concurrent_compilations: 0
+        all_deployments: false
+      - type: "JOB"
+        name: "control-repo-puppetfile-syntax-validate"
+        concurrent_compilations: 0
+        all_deployments: false
+      auto_promote: "all_succeeded"
+    - name: "Impact Analysis stage"
+      steps:
+      - type: "IMPACT_ANALYSIS"
+        concurrent_compilations: 10
+        all_deployments: true
+      - type: "PULL_REQUEST_GATE"
+        concurrent_compilations: 0
+        all_deployments: false
+      auto_promote: "all_succeeded"
+    - name: "Deployment stage"
+      steps: []
+      auto_promote: false
+  tier0:
+    triggers:
+    - "COMMIT"
+    stages:
+    - name: "Code Validation stage"
+      steps:
+      - type: "JOB"
+        name: "control-repo-manifest-validate"
+        concurrent_compilations: 0
+        all_deployments: false
+      - type: "JOB"
+        name: "control-repo-hiera-syntax-validate"
+        concurrent_compilations: 0
+        all_deployments: false
+      - type: "JOB"
+        name: "control-repo-template-syntax-validate"
+        concurrent_compilations: 0
+        all_deployments: false
+      - type: "JOB"
+        name: "control-repo-puppetfile-syntax-validate"
+        concurrent_compilations: 0
+        all_deployments: false
+      auto_promote: "all_succeeded"
+    - name: "Tier0_lab Impact Analysis"
+      steps:
+      - type: "IMPACT_ANALYSIS"
+        deployments:
+        - "Deployment to tier0_lab on LAB_Pupept-Master"
+        concurrent_compilations: 1
+        all_deployments: false
+        puppetdb_connection_timeout_sec: 180
+      auto_promote: "all_succeeded"
+    - name: "Tier0_lab Code Deployment"
+      steps:
+      - type: "DEPLOYMENT"
+        name: "Deployment to tier0_lab on LAB_Pupept-Master"
+        policy:
+          name: "cd4pe_deployments::eventual_consistency"
+        timeout: 3600000
+        concurrent_compilations: 0
+        all_deployments: false
+        pe_server: "LAB_Pupept-Master"
+        target:
+          type: "NODE_GROUP"
+          node_group_id: "79fb6f32-2709-4935-acd7-474542258db5"
+      auto_promote: "all_succeeded"
 spec_version: "V1"
 
