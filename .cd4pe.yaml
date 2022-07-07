@@ -1,0 +1,42 @@
+config:
+  enable_pull_requests_from_forks: false
+  deployment_policy_branch: "production"
+  enable_pe_plans: true
+pipelines:
+  production:
+    triggers:
+    - "COMMIT"
+    stages:
+    - name: "Code Validation stage"
+      steps:
+      - type: "JOB"
+        name: "control-repo-manifest-validate"
+        concurrent_compilations: 0
+        all_deployments: false
+      - type: "JOB"
+        name: "control-repo-hiera-syntax-validate"
+        concurrent_compilations: 0
+        all_deployments: false
+      - type: "JOB"
+        name: "control-repo-template-syntax-validate"
+        concurrent_compilations: 0
+        all_deployments: false
+      - type: "JOB"
+        name: "control-repo-puppetfile-syntax-validate"
+        concurrent_compilations: 0
+        all_deployments: false
+      auto_promote: "all_succeeded"
+    - name: "Impact Analysis stage"
+      steps:
+      - type: "IMPACT_ANALYSIS"
+        concurrent_compilations: 10
+        all_deployments: true
+      - type: "PULL_REQUEST_GATE"
+        concurrent_compilations: 0
+        all_deployments: false
+      auto_promote: "all_succeeded"
+    - name: "Deployment stage"
+      steps: []
+      auto_promote: false
+spec_version: "V1"
+
