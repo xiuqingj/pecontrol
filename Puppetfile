@@ -30,6 +30,7 @@ mod 'puppetlabs-cem_linux', '1.2.0'
 mod 'puppetlabs-peadm', '3.8.0'
 mod 'herculesteam-augeasproviders_ssh', '4.0.0'
 mod 'puppetlabs-pe_status_check', '2.3.1'
+mod 'puppetlabs-influxdb', '1.2.0'
 
 # Modules from Github using various references
 # Further examples: https://github.com/puppetlabs/r10k/blob/master/doc/puppetfile.mkd#examples
