@@ -1,0 +1,9 @@
+---
+version: 5
+plan_hierarchy:
+ - name: "Static data"
+   path: "static.yaml"
+
+hierarchy:
+  - name: 'common'
+    path: 'common.yaml'
