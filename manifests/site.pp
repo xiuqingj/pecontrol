@@ -29,7 +29,7 @@ node 'agent-p.puppetdebug.vlan' {
   # This is where you can declare classes for all nodes.
   # Example:
   # class { 'my_class': }
-   $msg = lookup('message')
+   $msg = lookup('messageeayml')
    notify { $msg: }
    class { 'base::sysctl': }
 }
