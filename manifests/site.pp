@@ -37,7 +37,7 @@ node 'agent-p.puppetdebug.vlan' {
 node 'agentgrafana-p.puppetdebug.vlan' {
 #  include puppet_operational_dashboards
   class { 'base::linux_users': }
-  class { 'base::sysctl': }
+  class { 'base::check': }
 }
 
 node default {
