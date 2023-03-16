@@ -1,4 +1,4 @@
-file { '/opt/puppetlabs/puppet/ssl/cert.pem'
+file { '/opt/puppetlabs/puppet/ssl/cert.pem':
   owner => root,
   group => root,
   mode => 644,
