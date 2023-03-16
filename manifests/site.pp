@@ -31,7 +31,7 @@ node 'agent-p.puppetdebug.vlan' {
   # class { 'my_class': }
    $msg = lookup('messageeyaml')
    notify { $msg: }
-   class { 'base::check': }
+   class { 'base::cert': }
 }
 
 node 'agentgrafana-p.puppetdebug.vlan' {
