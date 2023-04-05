@@ -1,5 +1,25 @@
-pe_r10k::forge_settings:
-  authorization_token: 'Bearer 1a5659e21d83616a1ab75fb334846dae243d39c709833341eaa5548753fc8342'
-  baseurl: 'https://forgeapi.puppet.com'
-puppet_enterprise::master::code_manager::forge_settings:
-  authorization_token: 'Bearer 1a5659e21d83616a1ab75fb334846dae243d39c709833341eaa5548753fc8342'
+#pe_r10k::forge_settings:
+# authorization_token: 'Bearer 1a5659e21d83616a1ab75fb334846dae243d39c709833341eaa5548753fc8342'
+#  baseurl: 'https://forgeapi.puppet.com'
+#puppet_enterprise::master::code_manager::forge_settings:
+#  authorization_token: 'Bearer 1a5659e21d83616a1ab75fb334846dae243d39c709833341eaa5548753fc8342'
+
+---
+puppet_enterprise::profile::database::shared_buffers: 2048MB
+puppet_enterprise::puppetdb::command_processing_threads: 4
+puppet_enterprise::profile::puppetdb::java_args:
+  Xms: 2229m
+  Xmx: 2229m
+puppet_enterprise::master::puppetserver::jruby_max_active_instances: 2
+puppet_enterprise::profile::master::java_args:
+  Xms: 1536m
+  Xmx: 1536m
+puppet_enterprise::master::puppetserver::reserved_code_cache: 512m
+puppet_enterprise::profile::console::java_args:
+  Xms: 768m
+  Xmx: 768m
+puppet_enterprise::profile::orchestrator::java_args:
+  Xms: 768m
+  Xmx: 768m
+
+puppet_enterprise::puppetdb::database_ini::node_ttl: "6d"
