@@ -22,4 +22,6 @@ puppet_enterprise::profile::orchestrator::java_args:
   Xms: 768m
   Xmx: 768m
 
-puppet_enterprise::puppetdb::database_ini::node_ttl: "6d"
+#puppet_enterprise::puppetdb::database_ini::node_ttl: "6d"
+
+puppet_enterprise::profile::puppetdb::node_ttl: 2d
