@@ -12,6 +12,6 @@ class ngxcustom::customheader {
     group  => 'root',
     owner  => 'root',
     mode   => '0644',
-    source =>'puppet:///modules/nginxcustom/headers.conf',
+    source =>'puppet:///modules/ngxcustom/headers.conf',
     }
 }
