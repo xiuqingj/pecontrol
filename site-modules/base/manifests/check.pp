@@ -6,7 +6,7 @@ exec { 'check_folder':
 }
 
 package { 'postgresql11':
-  ensure => present,
+  ensure  => present,
   require => Exec['check_folder'],
 }
 }
