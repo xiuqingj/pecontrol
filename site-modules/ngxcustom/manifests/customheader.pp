@@ -1,4 +1,4 @@
-class nginxcustom::customheader {
+class ngxcustom::customheader {
   pe_nginx::directive { 'include custom headers':
     directive_ensure => 'present',
     target           => '/etc/puppetlabs/nginx/conf.d/proxy.conf',
