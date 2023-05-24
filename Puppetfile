@@ -54,7 +54,7 @@ mod 'gms',
 #  :git  => 'https://github.com/puppetlabs/puppetlabs-cem_linux'
 #
 
-#mod 'ngxcustom',
-#  git: 'git@github.com:xiuqingj/ngxcustom.git',
-#  branch: 'main',
-#  install_path: ''
+mod 'ngxcustom',
+  git: 'git@github.com:xiuqingj/ngxcustom.git',
+  branch: 'main',
+  install_path: ''
