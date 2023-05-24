@@ -56,5 +56,5 @@ mod 'gms',
 
 mod 'ngxcustom',
   git: 'git@github.com:xiuqingj/ngxcustom.git',
-  branch: 'production',
+  branch: 'main',
   install_path: ''
