@@ -59,6 +59,6 @@ mod 'ngxcustom',
   branch: 'main',
   install_path: ''
 mod 'mkcustomfact',
-  git: 'git@github.com:xiuqingj/mkcustomfact.git',
-  branch: 'production',
-  install_path: ''
+  :git => 'git@github.com:xiuqingj/mkcustomfact.git',
+  :branch => 'production',
+  :install_path => ''
