@@ -4,14 +4,10 @@
 #
 # @example
 #   include hosts
-class hosts {
-@@host { $::hostname:
-ip => $::ipaddress,
-host_aliases => $::fqdn,
+class ba {
+  @@host { $::hostname:
+  ip           => $::ipaddress,
+  host_aliases => $::fqdn,
+  tag          => 'login_server',
 }
 
-Host <<||>>
-
-resources {'host':
-purge => true,
-}
