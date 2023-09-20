@@ -38,7 +38,7 @@ node 'agentgrafana-p.puppetdebug.vlan' {
 #  include puppet_operational_dashboards
   #class { 'base::linux_users': }
   $greet = lookup('greeting')
-  notify ( $greet: }
+  notify { $greet: }
   class { 'base::check': }
 }
 
