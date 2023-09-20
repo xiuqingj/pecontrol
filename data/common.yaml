@@ -1,5 +1,5 @@
 ---
-message: "This node is using common data from primary server on 18th April"
+greeting: This node is managed by Sandra
 
 motd::content: | 
   Welcome
