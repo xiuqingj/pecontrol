@@ -1,5 +1,5 @@
 ---
-greeting: This node is managed by Sandra
+greeting: This node is managed by Sandra for agent grafana
 
 motd::content: | 
   Welcome
