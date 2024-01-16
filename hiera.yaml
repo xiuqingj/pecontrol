@@ -5,11 +5,13 @@ defaults:
   data_hash: yaml_data
 
 hierarchy:
-  - name: "Yaml backend"
+  - name: "Host specific data"
     paths:
       - "nodes/%{trusted.certname}.yaml"
   - name: "Compile Master Data"
     path: "role/%{trusted.extensions.pp_role}.yaml"
+  - name: "Global OS hiera data"
+    path: "CentOS.yaml"
   - name: "Other YAML hierarchy levels"
     path: "common.yaml"
 
