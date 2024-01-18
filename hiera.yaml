@@ -12,6 +12,8 @@ hierarchy:
     path: "role/%{trusted.extensions.pp_role}.yaml"
   - name: "Global OS hiera data"
     path: "CentOS.yaml"
+  - name: "Global RedHat hiera data"
+    path: "RedHat.yaml"
   - name: "Other YAML hierarchy levels"
     path: "common.yaml"
 

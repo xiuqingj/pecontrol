@@ -1,0 +1,9 @@
+---
+mykey:
+  country:
+    - global value a RedHat
+    - global value b RedHat
+    - global value c RedHat
+  other-country:
+    x: value-x
+    y: value-y

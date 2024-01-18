@@ -1,10 +1,10 @@
 ---
 mykey:
   country:
-    a: node value a
-    b: node value b
-    e: node value e
-    f: node value f
+    - node value a
+    - node value b
+    - node value e
+    - node value f
 lookup_options:
   mykey:
     merge:

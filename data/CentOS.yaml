@@ -1,9 +1,9 @@
 ---
 mykey:
   country:
-    a: global value a
-    b: global value b
-    c: global value c
+    - global value a
+    - global value b
+    - global value c
   other-country:
     x: value-x
     y: value-y
